@@ -1,0 +1,71 @@
+/* features - section 2 */
+
+.features__title {
+    color: $text-secondary-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;   
+    
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.features {
+    @extend %list;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .features__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .features__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    
+    .features__item:nth-child(2n) {
+        margin-left: 30px;
+    }
+
+    .features__item:nth-child(-n+2) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .features__item {
+        width: 270px;
+    }
+    .features__item + .features__item {
+        margin-left: 30px;       
+    }
+}
+
+.features__text {
+    margin-bottom: 0;
+}
+
+.features__box {
+    height: 120px;
+    background: $bcg-secondary-color;
+    
+    @include centeredFlex(flex);
+
+    border-radius: 4px;
+    margin-bottom: 30px;
+}

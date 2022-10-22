@@ -1,0 +1,146 @@
+/* footer */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .footer-mobile {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-contacts {
+    font-style: normal;
+
+    @extend %list;
+
+    & .item:not(:last-child) {
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+    }
+
+    & .contacts {
+        color: $footer-contacts-color;
+    
+        @extend %link;
+
+        transition: color $transition-duration $transition-timing-function;
+    }
+
+    & .map:hover,
+    & .map:focus,
+    & .contacts:hover,
+    & .contacts:focus {
+        color: $accent-color;
+    }
+    
+}
+
+.map {
+    color: $main-footer-text-color;
+
+    @extend %link;
+
+    & .contacts {
+        transition: color $transition-duration $transition-timing-function;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer-tablet {
+        display: flex;
+        align-items: baseline;
+        
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 60px;
+            justify-content: space-around;
+        } 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-desktop {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }  
+}
+
+
+@media screen and (min-width: 1200px) {
+    .footer-join {
+        margin-left: 70px;
+    }
+}
+
+
+.join {
+    text-transform: uppercase;
+    color: $main-footer-text-color;
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-form {
+        display: flex;
+    }
+}
+
+.icon-send {
+    margin-left: 10px;
+}
+
+.footer-input {
+    height: 50px;
+    outline: none;
+    border: $border-footer-input;
+    filter: $filter-footer-input;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    color: $bcg-primary-color;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
+    transition: border $transition-duration $transition-timing-function;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    } 
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.3;
+        color: $footer-contacts-color;
+    }
+
+    &:focus,
+    &:hover {
+        border: 1px solid $bcg-primary-color;
+    }
+}

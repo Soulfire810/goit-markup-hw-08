@@ -1,0 +1,75 @@
+/* regular customers - section 5 */
+
+.customers {
+    @extend %list;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .customers__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    .customers__item:nth-child(2n) {
+        margin-left: 30px;
+    }
+
+    .customers__item:nth-child(-n+4) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .customers__item {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+
+    .customers__item {
+        margin-right: 30px;
+    }
+        
+    .customers__item:nth-child(3n+3) {
+        margin-right: 0;
+    }
+
+    .customers__item:nth-child(-n+3) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers__item {
+        width: 170px;
+    }
+    .customers__item + .customers__item {
+        margin-left: 30px;       
+    }
+}
+
+.customers__link {
+    height: 92px;
+    border: 1px solid $border-customers-color;
+    border-radius: 4px;
+    
+    @include centeredFlex(flex);
+
+    @extend %link;
+
+    fill: $social-icon-color;
+
+    transition: border $transition-duration $transition-timing-function, fill $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $accent-color;
+        fill: $accent-color;
+    }
+}
+
