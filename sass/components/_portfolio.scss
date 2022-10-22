@@ -152,28 +152,3 @@
     transform: translateY(0);
     }
 }
-
-/* .projects-thumb::before {
-    content: "";
-    
-    width: 100%;
-    height: 100%;
-    background-color: $projects-overlay-color;
-} */
-
-
-/* .projects-description,
-.projects-thumb::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: transform $transition-duration $transition-timing-function;
-} */
-
-/* .projects .link:hover .projects-description,
-.projects .link:focus .projects-description,
-.projects .link:hover .projects-thumb::before,
-.projects .link:focus .projects-thumb::before {
-    transform: translateY(0);
-} */

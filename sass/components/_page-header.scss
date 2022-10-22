@@ -32,12 +32,6 @@
     }
   }
 
-/* .site-nav .item {
-    margin-right: 50px;
-}
-.site-nav .item:last-child {
-    margin-right: 0;
-} */
   
 .site-nav {
     font-size: 40px;
@@ -311,31 +305,6 @@
     }
 }
 
-
-/* 
-.item .icon-mail::before,
-.item .icon-tel::before {
-    content: "";
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-right: 10px;
-    fill: currentColor;
-}
-.icon-mail::before {
-    content: "";
-    background-image: url(../images/hw-4/icon-mail.svg);
-    width: 16px;
-    height: 12px;
-}
-.icon-tel::before {
-    content: "";
-    background-image: url(../images/hw-4/icon-tel.svg);
-    width: 10px;
-    height: 16px;
-} */
-
   
   .menu-toggle {
     min-height: 40px;
@@ -396,52 +365,3 @@
         justify-content: space-between;
         height: 100%;
   }
-
-
-
-// @media screen and (max-width: 767px) {
-//     .menu-button {
-//         display: inline-flex;
-//         margin: 0;
-//         padding: 0;
-//         border: none;
-//         background-color: transparent;
-        
-//     }
-    
-//     .menu-button .icon-close {
-//         display: none;
-//     }
-    
-//     .menu-button.is-open .icon-close {
-//         display: block;
-//     }
-    
-//     .menu-button.is-open .icon-menu {
-//         display: none;
-//     }
-
-//     .menu-containar {
-//         display: none;
-
-//         position: absolute;
-//         top: 100%;
-//         left: 0;
-//         width: 100%;
-
-//         padding: 48px 40px;
-//         min-height: 796px;
-
-//         background-color: $bcg-primary-color;
-//     }
-
-//     .menu-containar.is-open {
-//         display: block;
-//     }
-// }
-
-// @media screen and (min-width: 768px) {
-//     .menu-button {
-//         display: none;
-//     }
-// }

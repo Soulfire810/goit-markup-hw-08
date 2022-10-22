@@ -97,20 +97,6 @@
     transition: fill $transition-duration $transition-timing-function;
 }
 
-// .form-field:focus-within > .form-field__icon,
-// .form-field:hover > .form-field__icon {
-//         fill: $accent-color;
-// }
-
-/* .form-field input:focus ~ .icon-input {
-    fill: $accent-color;
-} */
-
-
-/* .checkbox-input {
-    appearance: none;
-    position: absolute;
-} */
 
 .form-checkbox {
     @include centeredFlex(flex);
